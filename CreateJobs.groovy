@@ -1,5 +1,4 @@
 def repositories = [
-  'esn-frontend-admin',
   'esn-frontend-inbox'
 ]
 
@@ -19,7 +18,7 @@ repositories.each {
     }
     triggers {
       periodicFolderTrigger {
-        interval('1')
+        interval('3')
       }
     }
     orphanedItemStrategy {
