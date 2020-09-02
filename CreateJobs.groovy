@@ -1,4 +1,5 @@
 def repositories = [
+  'esn-frontend-admin',
   'esn-frontend-inbox'
 ]
 
