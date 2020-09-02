@@ -1,18 +1,5 @@
 def repositories = [
-  'esn-api-client',
-  'esn-dav-import-client',
-  'esn-frontend-account-inbox',
-  'esn-frontend-account',
-  'esn-frontend-admin',
-  'esn-frontend-calendar',
-  'esn-frontend-common-libs',
-  'esn-frontend-contacts',
-  'esn-frontend-inbox',
-  'esn-frontend-inbox-calendar',
-  'esn-frontend-inbox-linshare',
-  'esn-frontend-linshare',
-  'esn-frontend-mailto',
-  'esn-frontend-videoconference-calendar'
+  'esn-frontend-inbox'
 ]
 
 repositories.each {
@@ -23,7 +10,7 @@ repositories.each {
       github {
         id(repo)
         scanCredentialsId('github')
-        repoOwner('OpenPaaS-Suite')
+        repoOwner('aduprat')
         repository(repo)
         buildOriginPRHead(true)
         buildOriginBranchWithPR(false)
