@@ -18,7 +18,7 @@ repositories.each {
     }
     triggers {
       periodicFolderTrigger {
-        interval('3')
+        interval('10')
       }
     }
     orphanedItemStrategy {
