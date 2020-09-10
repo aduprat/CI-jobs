@@ -1,5 +1,4 @@
 def repositories = [
-  'esn-frontend-admin',
   'esn-frontend-inbox'
 ]
 
@@ -27,5 +26,20 @@ repositories.each {
             numToKeep(20)
         }
     }
+  }
+}
+
+listView('inbox') {
+  jobs {
+    names(repositories.toArray(new String[repositories.size()]))
+  }
+  columns {
+    status()
+    weather()
+    name()
+    lastSuccess()
+    lastFailure()
+    lastDuration()
+    buildButton()
   }
 }
